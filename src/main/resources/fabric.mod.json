@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "basicmod",
+	"version": "${version}",
+	"name": "BasicMod",
+	"description": "This is a basic example mod. It's only purpose is to demonstrate the required structure of a mod and how to set up a development environment.",
+	"authors": [
+		"jvstauri"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/basicmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jvstauri.mhm.BasicMod"
+		],
+		"fabric-datagen": [
+			"com.jvstauri.mhm.BasicModDataGenerator"
+		],
+		"client": [
+			"com.jvstauri.mhm.BasicModClient"
+		]
+	},
+	"mixins": [
+		"basicmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
