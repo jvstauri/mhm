@@ -1,32 +1,25 @@
 {
 	"schemaVersion": 1,
-	"id": "basicmod",
+	"id": "chattab",
 	"version": "${version}",
-	"name": "BasicMod",
-	"description": "This is a basic example mod. It's only purpose is to demonstrate the required structure of a mod and how to set up a development environment.",
+	"name": "ChatTab",
+	"description": "A simple chat tab mod for Hypixel.",
 	"authors": [
 		"jvstauri"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/jvstauri/ChatTab"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/basicmod/icon.png",
+	"license": "MIT",
+	"icon": "assets/chattab/ChatTabs.png",
 	"environment": "*",
 	"entrypoints": {
-		"main": [
-			"com.jvstauri.mhm.BasicMod"
-		],
-		"fabric-datagen": [
-			"com.jvstauri.mhm.BasicModDataGenerator"
-		],
 		"client": [
-			"com.jvstauri.mhm.BasicModClient"
+			"com.jvstauri.ChatTabClient"
 		]
 	},
 	"mixins": [
-		"basicmod.mixins.json"
+		"chattab.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.18.4",

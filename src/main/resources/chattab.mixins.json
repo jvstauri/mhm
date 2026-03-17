@@ -3,7 +3,8 @@
 	"package": "com.jvstauri.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ChatMixin",
+		"ChatScreenMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
